@@ -1,0 +1,16 @@
+#Configurations 
+#Download and install visual studio code
+
+#Run the following commands in your terminal
+git config --global user.name "fname lname"
+git config --global user.email youremail@youemail.com
+git config --global core.editor "code --wait"
+git config --global core.autocrlf true
+git config --global diff.tool vscode 
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+
+#Open your git configuration file using the following command and verify all entries
+git config --global --list
+
+#Edit any entries that are absent
+git config --global -e (open the config file to verify all settings were saved, lookout for local and remote and add if needed)
